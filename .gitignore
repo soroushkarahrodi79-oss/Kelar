@@ -1,0 +1,33 @@
+# Local and operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor artifacts
+.vscode/
+.idea/
+*.swp
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python/Jupyter artifacts (if later justified)
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+
+# Generated or temporary files
+*.tmp
+*.bak
+~$*
+
+# Restricted research material must remain outside version control
+/private/
+/restricted/
+data/restricted/
+evidence/restricted/
