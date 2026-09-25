@@ -2,11 +2,15 @@
 
 **Protocol status:** Phase 0A baseline frozen at `4ac933fdad99c3cfd495e6c175c1e3d64b37f217`
 **Gate status:** OPEN
-**Stage A:** APPROVED / FROZEN
+**Stage A:** CLOSED / FROZEN
 **Current authorized search substage:** NONE
-**Stage B:** CLOSED / NOT AUTHORIZED
-**Evidence acquisition:** NOT YET AUTHORIZED
-**Calibration search:** NOT YET AUTHORIZED
+**Stage B:** CLOSED / CALIBRATION COMPLETE (28/30 EXECUTIONS)
+**Stage C:** NOT AUTHORIZED
+**Formal evidence acquisition:** NOT AUTHORIZED
+**Formal literature acquisition:** NOT AUTHORIZED
+**Kelardasht claim verification:** NOT AUTHORIZED
+**Spanish case screening:** NOT AUTHORIZED
+**Calibration search:** CLOSED; CALIBRATION SUFFICIENT; 2 EXECUTIONS INTENTIONALLY UNUSED
 **Formal search:** NOT YET AUTHORIZED
 **Canonical language:** English  
 **Last updated:** 2026-09-25
@@ -385,7 +389,7 @@ Specialist review is desirable but not guaranteed and Gate 0 execution must not 
 
 ## 11. Phase boundary
 
-Freezing Stage A does not authorize Stage B or evidence acquisition. Calibration, formal searching, source retrieval, register population, claim verification, data acquisition, and case screening/selection each remain closed unless explicitly authorized.
+Stage B is closed after owner approval of the bounded terminology, indexing, transliteration, database-behaviour, and search-environment calibration recorded under `literature/SEARCH_ARCHITECTURE.md`. Stage C, formal searching, evidence/literature acquisition, substantive register population, claim verification, data acquisition, and case screening/selection remain closed unless explicitly authorized.
 
 ## Approval and freeze record
 

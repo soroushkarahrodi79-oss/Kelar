@@ -199,3 +199,29 @@ Do not delete superseded decisions. Link the replacing entry.
 - **Redundancy control:** Make `literature/SEARCH_ARCHITECTURE.md` authoritative for search stages, calibration limits, execution counting, logging, and change control; replace the duplicated Stage A/B rules in `literature/SEARCH_PROTOCOL.md` with a cross-reference. Retain domain routing, terminology, ethical, and stopping detail because it is search-operational rather than duplicative of general Gate/source/language controls.
 - **Authorization boundary:** No calibration, formal search, source retrieval, register population, claim verification, literature acquisition, data acquisition, or Spanish case screening/selection is authorized.
 - **Review trigger:** Separate owner authorization to open Stage B. The 30-execution ceiling cannot be extended without separate authorization.
+
+### D-0018 — Open Gate 0 Stage B bounded multilingual calibration
+
+- **Date:** 2026-09-25
+- **Status:** APPROVED
+- **Decision owner:** Soroush Karahrodi
+- **Decision:** Open Stage B solely for multilingual terminology, indexing, transliteration, database-behaviour, and search-environment calibration under a hard ceiling of 30 query executions.
+- **Priority routing:** Allocate executions dynamically across the owner-specified Persian, English, and Spanish Domain × Language cells. Do not impose language quotas and do not search D12 independently unless encountered terminology creates a genuine specialist-vocabulary problem.
+- **Inspection boundary:** Permit metadata, titles, abstracts, keywords/index terms, official-page titles/headings, result snippets, landing-page institutional terminology, and publication metadata solely for calibration. Prohibit full-text research, substantive extraction, corpus archiving, and findings.
+- **Authorization boundary:** Formal evidence/literature acquisition, Kelardasht claim verification, substantive workstreams 0B/0C and later, Spanish case screening/selection, and formal search execution remain closed.
+- **Outputs:** An execution-complete `literature/SEARCH_LOG.csv`, minimal non-evidentiary calibration leads only where necessary, and `literature/CALIBRATION_REPORT.md` for owner review. No commit is authorized.
+- **Stop rule:** Stop at 30 executions, upon substantive drift, unlawful/restricted access, unnecessary sensitive-site exposure, required substantive-register population, or a material architecture redesign need.
+- **Review trigger:** Owner review of Stage B outputs; no formal-search stage opens automatically.
+
+### D-0019 — Approve and close Gate 0 Stage B calibration
+
+- **Date:** 2026-09-25
+- **Status:** APPROVED
+- **Decision owner:** Soroush Karahrodi
+- **Decision:** Accept the Stage B calibration as sufficient at 28 of the maximum 30 query executions, leave the remaining two executions intentionally unused, close Stage B as `CALIBRATION COMPLETE`, and keep Stage C unauthorized.
+- **Terminology decisions:** Retain `CONSERVATION READINESS` and `ADAPTIVE POLICY / PRACTICE TRANSFER` as project analytical constructs while demoting literal `conservation readiness` and `adaptive transfer` as primary indexing phrases. Future domain-specific retrieval must use the approved established families and preserve their conceptual distinctions. Analytical/project language is not automatically database indexing language.
+- **Native-environment limitation:** Stage B calibrated terminology and general-web retrieval behaviour, not native-interface syntax or coverage for untested SID, Magiran, Civilica, Noormags, Google Scholar, Crossref, Dialnet, Scopus, or Web of Science environments. Any later Stage C must classify each environment as `VERIFIED`, `CONDITIONAL_UNVERIFIED`, or `EXCLUDED`; exact executable queries cannot be operationally frozen for a `CONDITIONAL_UNVERIFIED` environment.
+- **Lead status:** Preserve all six pointers as `CALIBRATION LEAD — NOT YET EVIDENCE`. No lead is promoted, assigned claim status, or entered into the claim, evidence, or literature registers. Stage C cannot silently promote them.
+- **Traceability:** Calibration results and proposed changes are documented in `literature/CALIBRATION_REPORT.md`; this decision supplies owner approval; the resulting operational wording is versioned in `literature/SEARCH_ARCHITECTURE.md` and cross-referenced by `literature/SEARCH_PROTOCOL.md`.
+- **Authorization boundary:** Further calibration, Stage C, formal search, formal evidence/literature acquisition, Kelardasht claim verification, substantive Gate 0 workstreams, and Spanish case screening/selection remain closed.
+- **Review trigger:** Separate owner authorization is required to open Stage C; no later stage opens automatically.

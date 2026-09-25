@@ -4,17 +4,21 @@ This repository is the canonical English-language scientific record for a propos
 
 ## Current authorization
 
-The reviewed **Phase 0A — Project Inception & Gate 0 Design** package is closed and baselined at commit `4ac933fdad99c3cfd495e6c175c1e3d64b37f217`. Gate 0 is open; Stage A search architecture is owner-approved for freezing. No evidence acquisition, calibration search, formal search, comparative case selection, policy recommendation, fieldwork, GIS analysis, tourism modelling, or public dissemination has begun.
+The reviewed **Phase 0A — Project Inception & Gate 0 Design** package is closed and baselined at commit `4ac933fdad99c3cfd495e6c175c1e3d64b37f217`. Gate 0 is open; Stage A is frozen at commit `0ebbafd3aa2bdc5615cc564506ca4f024156af28`; and Stage B calibration is complete and owner-approved. No formal evidence or literature acquisition, formal search, comparative case screening or selection, policy recommendation, fieldwork, GIS analysis, tourism modelling, or public dissemination has begun.
 
 Current status:
 
 - **Phase 0A:** CLOSED / BASELINED
 - **Gate 0:** OPEN
-- **Stage A:** APPROVED / FROZEN
+- **Stage A:** CLOSED / FROZEN
 - **Current authorized search substage:** NONE
-- **Stage B:** CLOSED / NOT AUTHORIZED
-- **Evidence acquisition:** NOT YET AUTHORIZED
-- **Calibration search:** NOT YET AUTHORIZED
+- **Stage B:** CLOSED / CALIBRATION COMPLETE
+- **Stage C:** NOT AUTHORIZED
+- **Formal evidence acquisition:** NOT AUTHORIZED
+- **Formal literature acquisition:** NOT AUTHORIZED
+- **Kelardasht claim verification:** NOT AUTHORIZED
+- **Spanish case screening:** NOT AUTHORIZED
+- **Calibration search:** CLOSED — 28 OF 30 EXECUTIONS USED; CALIBRATION SUFFICIENT
 - **Formal search:** NOT YET AUTHORIZED
 
 The primary analytical framing is **heritage governance, conservation readiness, community safeguards, and sustainable destination planning**. Tourism and destination development are applied domains, not predetermined objectives. The repository does not assume that tourism growth is desirable, that heritage should be converted into a tourism product, or that Spanish practices are transferable. The project may conclude that tourism development should be delayed, constrained, redirected, or not prioritized; it may also be modified or stopped.
@@ -63,4 +67,4 @@ Do not commit restricted source files, personal data, credentials, exact coordin
 
 ## Immediate control
 
-Stage A is frozen. Do not execute calibration or formal searches, retrieve sources, populate registers, verify substantive claims, or screen/select cases until Stage B is separately authorized.
+Stage A is frozen and Stage B calibration is closed/complete. Stage C is not authorized. Do not execute further calibration, formal searching, evidence or literature acquisition, substantive register population, claim verification, or Spanish case screening/selection.

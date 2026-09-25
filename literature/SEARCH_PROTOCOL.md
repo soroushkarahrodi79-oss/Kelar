@@ -1,6 +1,6 @@
 # Gate 0 Literature-Landscape Search Protocol
 
-**Status:** Gate 0 Stage A approved/frozen component; Stage B and all searching remain unauthorized
+**Status:** Gate 0 Stage A approved/frozen component; Stage B calibration closed/complete; Stage C and formal searching remain unauthorized
 **Purpose:** Test conceptual coherence, evidence availability, and a plausible research contribution—not conduct a full systematic review.
 
 This protocol governs the bounded academic literature landscape. The cross-domain search architecture, including official, technical, case-discovery, and data-feasibility pathways, is defined in `literature/SEARCH_ARCHITECTURE.md`. Where the two documents differ, the owner-frozen cross-domain architecture and any logged amendment control.
@@ -28,6 +28,8 @@ Search strings should combine only blocks relevant to a stated review question:
 - **Demand/management:** sustainable tourism; visitor management; overtourism; carrying capacity (critically); demand management.
 - **Community:** participation; authority; ownership; benefit distribution; displacement; social license; local knowledge.
 - **Transfer/comparison:** policy transfer; lesson drawing; policy mobility; institutional transplantation; comparative case study; transfer failure; adaptation.
+
+`Conservation readiness` and `adaptive policy/practice transfer` remain project analytical constructs, not privileged database indexing phrases. The owner-approved retrieval families and the requirement to preserve distinctions among them are controlled by Sections 5.4, 5.6, and 13.8 of `literature/SEARCH_ARCHITECTURE.md`.
 
 Do not require every block in one query. Record each exact query, platform, filters, date, and result count in the eventual search log.
 

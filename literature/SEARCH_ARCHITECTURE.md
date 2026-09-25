@@ -1,10 +1,10 @@
 # Gate 0 Search Architecture
 
-**Document status:** Owner-approved Stage A architecture; frozen
+**Document status:** Stage A architecture frozen; owner-approved Stage B refinements incorporated
 **Gate:** 0 — Scientific Feasibility & Comparative Design
-**Current authority:** No search execution; Stage B requires separate authorization
+**Current authority:** Stage B calibration closed/owner-approved under Decisions D-0018 and D-0019; Stage C, formal search, and evidence/literature acquisition remain unauthorized
 **Evidence acquisition:** NOT AUTHORIZED
-**Calibration search:** NOT AUTHORIZED
+**Calibration search:** CLOSED — 28 OF 30 QUERY EXECUTIONS USED; CALIBRATION SUFFICIENT; 2 INTENTIONALLY UNUSED
 **Formal search:** NOT AUTHORIZED
 **Baseline reference:** `4ac933fdad99c3cfd495e6c175c1e3d64b37f217`
 **Canonical documentation language:** English
@@ -12,7 +12,7 @@
 
 ## 1. Purpose and boundary
 
-This document defines the multilingual, reproducible, and bounded architecture that will govern future Gate 0 searching. Its purpose is to make later discovery and verification reviewable before any query is executed.
+This document defines the multilingual, reproducible, and bounded architecture governing Gate 0 searching. It was frozen before Stage B; authorized calibration execution and owner-approved refinements are recorded explicitly so the frozen rules do not drift silently.
 
 It does **not** contain frozen literal queries, search results, sources, evidence, accepted claims, candidate Spanish cases, or findings. All vocabulary below is provisional search-design material. Stage B calibration may propose refinements, but no refinement may enter the formal protocol silently.
 
@@ -22,9 +22,9 @@ The architecture is designed to answer the ten Gate 0 questions through the mini
 
 | Stage | Function | Current status | Permitted output |
 |---|---|---|---|
-| `A_ARCHITECTURE` | Define domains, terminology families, environments, selection logic, controls, and future logging. | **OPEN** | Owner-reviewable design only. |
-| `B_CALIBRATION` | Test terminology and indexing assumptions within a strict cap. | **CLOSED** | Calibration log and proposed query-family amendments only. |
-| `C_FORMAL_FREEZE` | Approve exact platform-specific queries, filters, and sequence. | **CLOSED** | Versioned formal query set and change-control baseline. |
+| `A_ARCHITECTURE` | Define domains, terminology families, environments, selection logic, controls, and future logging. | **CLOSED / FROZEN** | Owner-reviewable design only. |
+| `B_CALIBRATION` | Test terminology and indexing assumptions within a strict cap. | **CLOSED / CALIBRATION COMPLETE — 28/30 EXECUTIONS** | Calibration log and owner-approved query-family amendments only. |
+| `C_FORMAL_FREEZE` | Approve exact platform-specific queries, filters, and sequence. | **NOT AUTHORIZED** | Versioned formal query set and change-control baseline. |
 | `D_FORMAL_SEARCH` | Execute authorized Gate 0 searches and screen results. | **CLOSED** | Search log, candidate/source records, evidence/literature entries as separately authorized. |
 
 No stage opens automatically. Owner authorization must be recorded in `docs/DECISION_LOG.md`. Stage A approval will not itself authorize Stage B.
@@ -192,6 +192,8 @@ Transliteration variants are search aids only. The presence of a term in results
 | Governance | heritage governance; institutional arrangement; mandate; competence; coordination; accountability; enforcement; capacity | حکمرانی میراث; مدیریت میراث; ساختار نهادی; وظایف; اختیارات; هماهنگی; پاسخگویی; نظارت; ضمانت اجرا; ظرفیت نهادی | gobernanza del patrimonio; arreglo institucional; mandato; competencia; coordinación; rendición de cuentas; cumplimiento; capacidad institucional |
 | Territorial/destination planning | territorial planning; spatial planning; rural planning; mountain planning; destination planning; destination governance | برنامه‌ریزی سرزمینی; برنامه ریزی سرزمینی; آمایش سرزمین; برنامه‌ریزی روستایی; برنامه‌ریزی مقصد; مدیریت مقصد; حکمرانی مقصد | ordenación del territorio; planificación territorial; planificación rural; planificación de montaña; planificación de destinos; gobernanza de destinos |
 
+`CONSERVATION READINESS` remains a project analytical construct, but the literal phrase `conservation readiness` is demoted as a primary retrieval phrase. Future domain-specific retrieval should prioritize, without treating as synonyms, `heritage conservation`, `conservation planning`, `heritage management`, `management capacity`, `institutional capacity`, `governance capacity`, `preventive conservation`, and `conservation governance`. **ANALYTICAL CONCEPT ≠ PRIMARY SEARCH TERM.**
+
 ### 5.5 Tourism, visitor management, environment, and community
 
 | Function | English families | Persian families | Spanish families |
@@ -213,9 +215,11 @@ Transliteration variants are search aids only. The presence of a term in results
 | Data availability | open data; dataset; inventory; metadata; statistics; spatial data; geospatial portal; administrative boundary; licence | داده باز; مجموعه داده; فهرست; فراداده; آمار; داده مکانی; داده جغرافیایی; سامانه اطلاعات مکانی; مرز اداری; مجوز استفاده | datos abiertos; conjunto de datos; inventario; metadatos; estadísticas; datos espaciales; datos geográficos; geoportal; límite administrativo; licencia |
 | Specialist dependency | archaeological interpretation; conservation assessment; ecological assessment; legal interpretation; transport engineering; expert review | تفسیر باستان‌شناسی; ارزیابی حفاظت; ارزیابی زیست‌محیطی; تفسیر حقوقی; مهندسی حمل‌ونقل; بررسی تخصصی | interpretación arqueológica; evaluación de conservación; evaluación ecológica; interpretación jurídica; ingeniería del transporte; revisión especializada |
 
+`ADAPTIVE POLICY / PRACTICE TRANSFER` remains the project-level analytical framing, but `adaptive transfer` is demoted as a primary indexing phrase. Formal academic retrieval should prioritize, while preserving conceptual distinctions among, `policy transfer`, `lesson drawing`, `policy learning`, `policy mobility`, `institutional transfer`, `policy adaptation`, and `contextual adaptation`. **PROJECT ANALYTICAL LANGUAGE ≠ DATABASE INDEXING LANGUAGE.**
+
 ## 6. Candidate source environments
 
-Naming an environment does not assert access, coverage, reliability, or permission. Before Stage B, each environment must be marked `AVAILABLE`, `CONDITIONAL`, `UNAVAILABLE`, or `UNKNOWN`, with access basis and authentication method.
+Naming an environment does not assert access, coverage, reliability, or permission. Stage B calibrated terminology and general-web retrieval behaviour; it did not verify native-interface syntax or coverage for untested environments. Before any Stage C formal-query freeze, every proposed formal environment must be classified as `VERIFIED` (access and relevant search behaviour sufficiently confirmed), `CONDITIONAL_UNVERIFIED` (potentially useful, but native access, syntax, or coverage not yet verified), or `EXCLUDED` (unavailable, inappropriate, redundant, or not required), with access basis and authentication method recorded.
 
 ### 6.1 Primary and authoritative environments
 
@@ -225,7 +229,7 @@ Naming an environment does not assert access, coverage, reliability, or permissi
 - Spanish national, autonomous-community, provincial/island, municipal, heritage, tourism, protected-area, statistical, planning, legal-gazette, open-data, and geospatial portals.
 - International authoritative catalogues or records where directly relevant, including UNESCO records; inclusion does not substitute for national/local evidence.
 
-Exact institutions, official names, domains, search interfaces, archive status, and access limitations must be verified in Stage B/C rather than assumed from memory.
+Exact institutions, official names, domains, search interfaces, archive status, and access limitations must be verified in an authorized stage rather than assumed from memory.
 
 ### 6.2 Academic environments
 
@@ -367,7 +371,7 @@ Stage C will define justified platform-specific date filters by domain. Absence 
 7. **Spanish discovery:** The initial discovery frame is national, with autonomous-community and local sources. Later eligibility requires a bounded case-level unit and dimension-specific relevance.
 8. **Other geographies:** International or third-country evidence is allowed only for concepts/methods and may not become an unlogged comparison expansion.
 
-## 13. Stage B calibration design — not authorized
+## 13. Stage B calibration design and closure
 
 ### 13.1 Purpose
 
@@ -424,7 +428,7 @@ Calibration cannot establish source exhaustiveness, heritage significance, initi
 - Every execution receives a `CAL-*` search ID and `search_stage=CALIBRATION`.
 - Result records receive no evidence/literature/case IDs during calibration.
 - Only terminology/indexing observations and minimal locator data needed to identify a potentially important item may be recorded. Such a pointer must be labelled exactly `CALIBRATION LEAD — NOT YET EVIDENCE`; it must not include claim evaluation.
-- Any result later considered potentially relevant must be re-encountered in the formal search or explicitly re-screened after formal freeze, with a formal search ID and ordinary eligibility review.
+- A calibration lead may enter formal screening only during a later explicitly authorized evidence-acquisition stage, with a formal search ID and ordinary eligibility review. Stage C cannot silently promote a lead to evidence, assign it claim status, or enter it in `EVIDENCE_REGISTER.csv`, `CLAIM_REGISTER.csv`, or `LITERATURE_MATRIX.csv`.
 - Calibration files must be stored separately from formal logs/exports and labelled non-evidentiary.
 
 ### 13.7 Calibration change record
@@ -433,7 +437,11 @@ For each proposed vocabulary or architecture change, record the prior term/famil
 
 ### 13.8 Formal-query freeze after calibration
 
-Stage C will convert approved families into platform-specific exact strings and record query syntax, fields, filters, date/geographic limits, order, and expected purpose. Owner approval of that versioned set is required before formal search. Rejected calibration changes remain visible.
+If separately authorized, Stage C will convert approved families into platform-specific strings and record query syntax, fields, filters, date/geographic limits, order, and expected purpose. Each proposed formal environment must be classified under Section 6. An exact executable query cannot be represented as operationally frozen for a `CONDITIONAL_UNVERIFIED` environment; Stage C may define only a query template or conceptual query family pending legitimate native access and syntax/coverage verification. Owner approval of the versioned formal set is required before formal search. Rejected calibration changes remain visible.
+
+### 13.9 Owner-approved Stage B closure
+
+Stage B closed as `CALIBRATION SUFFICIENT` after 28 of the maximum 30 query executions. The two remaining executions are intentionally unused; no extension is authorized. The execution record is `literature/SEARCH_LOG.csv`, the six retained pointers remain `CALIBRATION LEAD — NOT YET EVIDENCE`, and the approved interpretations and native-environment limitations are documented in `literature/CALIBRATION_REPORT.md` and Decision D-0019. Stage C and every substantive or formal search function remain unauthorized.
 
 ## 14. Future search-log design
 
@@ -642,4 +650,4 @@ Owner freeze should assign a version and record any required corrections in the 
 
 | Role | Name | Decision | Date | Conditions |
 |---|---|---|---|---|
-| Project owner | Soroush Karahrodi | Approved with required corrections applied | 2026-09-25 | Stage B, calibration, and all evidence acquisition remain closed. |
+| Project owner | Soroush Karahrodi | Approved with required corrections applied | 2026-09-25 | Stage A freeze record. Stage B was opened by D-0018 and closed/approved by D-0019 after 28/30 executions; Stage C, formal search, and evidence acquisition remain closed. |
