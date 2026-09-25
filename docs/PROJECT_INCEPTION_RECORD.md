@@ -2,7 +2,7 @@
 
 **Document status:** Owner-approved Phase 0A baseline  
 **Phase:** 0A — Project Inception & Gate 0 Design  
-**Authority:** Baseline design only; Gate 0 evidence acquisition is not authorized  
+**Authority:** Phase 0A is closed/baselined; Gate 0 is open; Stage A is approved/frozen and Stage B is not authorized
 **Canonical language:** English  
 **Last updated:** 2026-09-25
 
@@ -299,9 +299,9 @@ Eventual public release is intended with restrictions under the principle **open
 
 ## 31. Current project status
 
-**PHASE 0A OWNER-APPROVED BASELINE — GATE 0 EVIDENCE ACQUISITION NOT AUTHORIZED.**
+**PHASE 0A CLOSED / BASELINED. GATE 0 OPEN — STAGE A APPROVED/FROZEN; STAGE B NOT AUTHORIZED.**
 
-No factual Gate 0 claim has been verified. No sources have been acquired for the evidence base. No Spanish case has been selected. No CHALUS scientific boundary has changed and no later gate is open. Gate 0 evidence acquisition must not start without separate explicit authorization.
+Evidence acquisition, calibration search, and formal search are not authorized. No factual Gate 0 claim has been verified. No sources have been acquired for the evidence base. No Spanish case has been selected. No CHALUS scientific boundary has changed and no later gate is open. Workstreams 0B, 0C, and all other substantive evidence workstreams remain unstarted.
 
 ## 32. Owner-review questions
 

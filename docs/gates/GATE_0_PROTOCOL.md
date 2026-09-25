@@ -1,8 +1,13 @@
 # Gate 0 Protocol — Scientific Feasibility & Comparative Design
 
-**Protocol status:** Owner-approved Phase 0A baseline  
-**Gate status:** NOT STARTED  
-**Authorized activity at present:** Baseline design only; evidence acquisition is not authorized  
+**Protocol status:** Phase 0A baseline frozen at `4ac933fdad99c3cfd495e6c175c1e3d64b37f217`
+**Gate status:** OPEN
+**Stage A:** APPROVED / FROZEN
+**Current authorized search substage:** NONE
+**Stage B:** CLOSED / NOT AUTHORIZED
+**Evidence acquisition:** NOT YET AUTHORIZED
+**Calibration search:** NOT YET AUTHORIZED
+**Formal search:** NOT YET AUTHORIZED
 **Canonical language:** English  
 **Last updated:** 2026-09-25
 
@@ -101,7 +106,7 @@ Before evidence acquisition:
 
 1. Owner approval must be recorded in this file and `docs/DECISION_LOG.md`.
 2. Owner-review questions in the inception record must be answered or explicitly deferred with consequences.
-3. The Stage A search architecture—concepts, source classes, candidate search environments, language coverage, provisional keyword families, inclusion/exclusion criteria, justified date/geographic constraints, documentation requirements, and change control—must be frozen. Literal formal search strings are frozen only after the bounded Stage B calibration procedure in `literature/SEARCH_PROTOCOL.md`.
+3. The Stage A search architecture in `literature/SEARCH_ARCHITECTURE.md`—concepts, source classes, candidate search environments, language coverage, provisional keyword families, inclusion/exclusion criteria, justified date/geographic constraints, documentation requirements, and change control—must be owner-reviewed and frozen. Literal formal search strings are frozen only after a separately authorized bounded Stage B calibration procedure.
 4. Gate-critical claim IDs must be created before searching for confirming evidence where practicable.
 5. Conflicts of interest, positionality, language competence, and access constraints must be declared.
 6. Sensitive-data controls must be operational.
@@ -380,10 +385,10 @@ Specialist review is desirable but not guaranteed and Gate 0 execution must not 
 
 ## 11. Phase boundary
 
-Completing this protocol does not authorize evidence acquisition. After owner approval, the next authorized action must be explicit, bounded to Gate 0, and recorded in the decision log.
+Freezing Stage A does not authorize Stage B or evidence acquisition. Calibration, formal searching, source retrieval, register population, claim verification, data acquisition, and case screening/selection each remain closed unless explicitly authorized.
 
 ## Approval and freeze record
 
 | Role | Name | Decision | Date | Protocol version/commit | Conditions |
 |---|---|---|---|---|---|
-| Project owner | Soroush Karahrodi | Approved Phase 0A baseline | 2026-09-25 | Uncommitted workspace baseline | Evidence acquisition remains unauthorized; formal search strings require post-calibration freeze. |
+| Project owner | Soroush Karahrodi | Approved Phase 0A baseline | 2026-09-25 | `4ac933fdad99c3cfd495e6c175c1e3d64b37f217` | Evidence acquisition remains unauthorized; formal search strings require post-calibration freeze. |

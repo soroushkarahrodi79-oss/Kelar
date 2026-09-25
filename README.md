@@ -4,9 +4,18 @@ This repository is the canonical English-language scientific record for a propos
 
 ## Current authorization
 
-Only the reviewed **Phase 0A — Project Inception & Gate 0 Design** baseline is authorized. No Gate 0 evidence acquisition, comparative case selection, policy recommendation, fieldwork, GIS analysis, tourism modelling, or public dissemination has begun.
+The reviewed **Phase 0A — Project Inception & Gate 0 Design** package is closed and baselined at commit `4ac933fdad99c3cfd495e6c175c1e3d64b37f217`. Gate 0 is open; Stage A search architecture is owner-approved for freezing. No evidence acquisition, calibration search, formal search, comparative case selection, policy recommendation, fieldwork, GIS analysis, tourism modelling, or public dissemination has begun.
 
-Current status: **PHASE 0A OWNER-APPROVED BASELINE — GATE 0 EVIDENCE ACQUISITION NOT AUTHORIZED**.
+Current status:
+
+- **Phase 0A:** CLOSED / BASELINED
+- **Gate 0:** OPEN
+- **Stage A:** APPROVED / FROZEN
+- **Current authorized search substage:** NONE
+- **Stage B:** CLOSED / NOT AUTHORIZED
+- **Evidence acquisition:** NOT YET AUTHORIZED
+- **Calibration search:** NOT YET AUTHORIZED
+- **Formal search:** NOT YET AUTHORIZED
 
 The primary analytical framing is **heritage governance, conservation readiness, community safeguards, and sustainable destination planning**. Tourism and destination development are applied domains, not predetermined objectives. The repository does not assume that tourism growth is desirable, that heritage should be converted into a tourism product, or that Spanish practices are transferable. The project may conclude that tourism development should be delayed, constrained, redirected, or not prioritized; it may also be modified or stopped.
 
@@ -24,6 +33,7 @@ This is an independent research and professional portfolio project academically 
 | `evidence/CLAIM_REGISTER.csv` | Empty schema for material research claims and their current status. |
 | `evidence/EVIDENCE_REGISTER.csv` | Empty schema for claim-specific evidence items. |
 | `literature/SEARCH_PROTOCOL.md` | Pre-registers the bounded Gate 0 literature-landscape search. |
+| `literature/SEARCH_ARCHITECTURE.md` | Defines the multilingual cross-domain Stage A architecture governing future Gate 0 search activity. |
 | `literature/LITERATURE_MATRIX.csv` | Empty schema for literature screening and extraction. |
 | `cases/spain/CASE_SCREENING.csv` | Empty schema for reproducible Spanish candidate-case screening. |
 
@@ -42,7 +52,7 @@ The directories anticipated for later data, analysis, and outputs have not been 
 
 ## Version-control workflow
 
-The workspace was not under Git version control when the owner-approved Phase 0A baseline was prepared, so no baseline commit or tag was created. Before any evidence acquisition, initialize or connect the workspace to a suitably controlled repository and use:
+The owner-approved Phase 0A baseline is the root commit `4ac933fdad99c3cfd495e6c175c1e3d64b37f217` on local branch `main`. No remote, tag, or release was created. Continue to use:
 
 - `main` for reviewed states only;
 - short-lived, narrowly scoped branches for research work;
@@ -53,4 +63,4 @@ Do not commit restricted source files, personal data, credentials, exact coordin
 
 ## Immediate control
 
-Do not begin Gate 0 evidence acquisition until the owner gives a separate explicit authorization for that activity.
+Stage A is frozen. Do not execute calibration or formal searches, retrieve sources, populate registers, verify substantive claims, or screen/select cases until Stage B is separately authorized.

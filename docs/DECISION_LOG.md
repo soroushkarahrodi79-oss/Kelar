@@ -175,3 +175,27 @@ Do not delete superseded decisions. Link the replacing entry.
 - **Context:** Owner review authorized corrections and baseline preparation, not research execution.
 - **Consequences:** No evidence acquisition, substantive Kelardasht claim acceptance, Spanish case selection, CHALUS boundary change, or later-gate opening is authorized. The workspace was not already under Git, so the baseline remains uncommitted and no release/tag exists.
 - **Review trigger:** Separate owner authorization for Gate 0 or placement of the baseline under version control.
+- **Review outcome:** The baseline was subsequently committed as `4ac933fdad99c3cfd495e6c175c1e3d64b37f217`; D-0016 records the later limited Gate 0 authorization. The original decision remains part of the audit trail.
+
+### D-0016 — Open Gate 0 for Stage A search-architecture design only
+
+- **Date:** 2026-09-25
+- **Status:** APPROVED
+- **Decision owner:** Soroush Karahrodi
+- **Decision:** Close Phase 0A as baselined at commit `4ac933fdad99c3cfd495e6c175c1e3d64b37f217`; open Gate 0 only for Stage A multilingual search-architecture design.
+- **Context:** The authoritative pre-evidence design is versioned, but the search architecture requires owner review before any discovery activity.
+- **Authorization boundary:** Evidence acquisition, source retrieval, calibration searching, formal searching, register population, substantive claim verification, literature screening, dataset acquisition, and Spanish case screening/selection remain unauthorized. Workstreams 0B, 0C, and other substantive evidence workstreams have not started.
+- **Consequences:** Stage A may define domains, languages, terminology families, source environments, source-tier mappings, claim families, eligibility rules, temporal/geographic logic, a future calibration design, logging/change control, stopping rules, and ethical controls. It may not test those designs against external search results.
+- **Review trigger:** Owner review of the completed Stage A architecture. No subsequent stage opens automatically.
+- **Review outcome:** Owner approved Stage A subject to removal of fixed language quotas, an auditable query-execution definition, and a clarified calibration inspection boundary. D-0017 records the corrected freeze.
+
+### D-0017 — Freeze Gate 0 Stage A search architecture
+
+- **Date:** 2026-09-25
+- **Status:** APPROVED
+- **Decision owner:** Soroush Karahrodi
+- **Decision:** Approve and freeze the corrected Gate 0 Stage A search architecture while keeping Stage B and all search execution closed.
+- **Required corrections applied:** Retain a hard ceiling of 30 calibration query executions but allocate by Domain × Language relevance without language quotas; define one execution as one distinct query string in one environment under one retrieval-affecting filter/mode configuration; permit terminology-only inspection of metadata, titles, abstracts, keywords/index terms, official-page titles/headings, snippets, and landing-page terminology while prohibiting substantive extraction.
+- **Redundancy control:** Make `literature/SEARCH_ARCHITECTURE.md` authoritative for search stages, calibration limits, execution counting, logging, and change control; replace the duplicated Stage A/B rules in `literature/SEARCH_PROTOCOL.md` with a cross-reference. Retain domain routing, terminology, ethical, and stopping detail because it is search-operational rather than duplicative of general Gate/source/language controls.
+- **Authorization boundary:** No calibration, formal search, source retrieval, register population, claim verification, literature acquisition, data acquisition, or Spanish case screening/selection is authorized.
+- **Review trigger:** Separate owner authorization to open Stage B. The 30-execution ceiling cannot be extended without separate authorization.

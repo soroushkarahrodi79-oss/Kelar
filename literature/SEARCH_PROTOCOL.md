@@ -1,7 +1,9 @@
 # Gate 0 Literature-Landscape Search Protocol
 
-**Status:** Owner-approved Phase 0A baseline; all searching remains unauthorized  
+**Status:** Gate 0 Stage A approved/frozen component; Stage B and all searching remain unauthorized
 **Purpose:** Test conceptual coherence, evidence availability, and a plausible research contribution—not conduct a full systematic review.
+
+This protocol governs the bounded academic literature landscape. The cross-domain search architecture, including official, technical, case-discovery, and data-feasibility pathways, is defined in `literature/SEARCH_ARCHITECTURE.md`. Where the two documents differ, the owner-frozen cross-domain architecture and any logged amendment control.
 
 ## 1. Review questions
 
@@ -14,7 +16,7 @@
 
 This is a **bounded scoping landscape** for Gate 0. It maps relevant bodies of literature and tests their compatibility. It is not a comprehensive systematic review, meta-analysis, bibliometric study, or evidence of local conditions in Kelardasht.
 
-Before any search, Stage A below must freeze the search architecture. Literal queries and complete synonym lists are deliberately not frozen until a bounded calibration search has exposed indexing vocabulary and language/transliteration variants.
+Before any search, the cross-domain Stage A architecture must be owner-reviewed and frozen. Literal queries and complete synonym lists are deliberately not frozen until a separately authorized bounded calibration search has exposed indexing vocabulary and language/transliteration variants.
 
 ## 3. Concept blocks
 
@@ -56,36 +58,7 @@ Record exclusion reasons for items reaching full-text assessment.
 
 ## 6. Two-stage pre-registered search procedure
 
-### Stage A — Search architecture freeze
-
-Before any searching, version and freeze:
-
-- research concepts and the question each concept serves;
-- source classes and candidate databases/search environments;
-- Persian, English, and Spanish coverage and owner/verification capability;
-- provisional keyword families, including known transliteration variants;
-- inclusion and exclusion criteria;
-- justified date and geographic constraints, or reasons for no limit;
-- required search-log, screening, and evidence documentation;
-- calibration bounds and stopping rule;
-- formal-search stopping rule; and
-- change-control rules, including who approves deviations.
-
-Stage A does not freeze literal search strings. Any later architecture change must be entered in the decision log with timing, reason, and consequences.
-
-### Stage B — Bounded calibration search
-
-After separate authorization, run a small, explicitly labelled pilot whose only purposes are to identify:
-
-- terminology differences across disciplines and source environments;
-- Persian, Spanish, and English synonyms;
-- transliteration and spelling variants;
-- database indexing/controlled vocabulary; and
-- obviously missing keyword families.
-
-The Stage A record must specify the maximum calibration queries or equivalent bound, environments used, and stop condition before the pilot starts. Calibration records must be tagged `CALIBRATION`, logged, and kept distinguishable from the formal evidence-acquisition set. They may inform query design but cannot silently enter the Gate 0 evidence set or literature synthesis; a potentially relevant calibration item must be re-encountered or explicitly re-screened under the frozen formal procedure.
-
-Every proposed change arising from calibration must be documented. Changes outside the frozen Stage A purpose require owner-approved protocol deviation, not informal expansion.
+Stage definitions, authorization boundaries, calibration limits, query-execution counting, result-inspection boundaries, future search logging, and change control are authoritatively defined in Sections 2 and 13–15 of `literature/SEARCH_ARCHITECTURE.md`. This literature protocol does not create a separate calibration quota or permission. Its concept blocks and literature-specific eligibility rules feed that controlling architecture.
 
 ### Formal-search freeze and execution
 
