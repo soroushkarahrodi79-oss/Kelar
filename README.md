@@ -14,7 +14,8 @@ Current status:
 - **Current authorized search substage:** NONE
 - **Stage B:** CLOSED / CALIBRATION COMPLETE
 - **Stage C:** CLOSED / FORMAL SEARCH ARCHITECTURE FROZEN
-- **Stage D1A (bounded P1 retrieval):** HALTED BEFORE EXECUTION — ENVIRONMENT VERIFICATION REQUIRED
+- **Stage D1A (bounded P1 retrieval):** INCOMPLETE — only substage `D1A-P` opened (see D-0023)
+- **Substage D1A-P (Cloud-compatible P1 pilot):** COMPLETE — 4 compatible P1 queries executed on `ENV-001-SURFACE-CLOUD-01` (`FS-001`–`FS-004`); locator/pipeline pilot only; 8 phrase-dependent P1 queries remain `BLOCKED_FOR_SURFACE_FIDELITY`; not D1A completion
 - **ENV-001 Cloud surface verification (D-0022):** COMPLETE — `PARTIAL_VERIFICATION` (`ENV-001-SURFACE-CLOUD-01`; locator-only, exact-phrase and half-space phrase semantics unverified)
 - **Formal evidence acquisition:** NOT AUTHORIZED
 - **Formal literature acquisition:** NOT AUTHORIZED
