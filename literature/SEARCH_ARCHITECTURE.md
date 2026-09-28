@@ -2,7 +2,7 @@
 
 **Document status:** Stage A architecture frozen; owner-approved Stage B refinements incorporated
 **Gate:** 0 — Scientific Feasibility & Comparative Design
-**Current authority:** Stage B calibration closed/owner-approved under Decisions D-0018 and D-0019; Stage C, formal search, and evidence/literature acquisition remain unauthorized
+**Current authority:** Stage B calibration closed/owner-approved; Stage C formal-search architecture closed/frozen under Decisions D-0020 and D-0021; execution and evidence/literature acquisition remain unauthorized
 **Evidence acquisition:** NOT AUTHORIZED
 **Calibration search:** CLOSED — 28 OF 30 QUERY EXECUTIONS USED; CALIBRATION SUFFICIENT; 2 INTENTIONALLY UNUSED
 **Formal search:** NOT AUTHORIZED
@@ -24,7 +24,7 @@ The architecture is designed to answer the ten Gate 0 questions through the mini
 |---|---|---|---|
 | `A_ARCHITECTURE` | Define domains, terminology families, environments, selection logic, controls, and future logging. | **CLOSED / FROZEN** | Owner-reviewable design only. |
 | `B_CALIBRATION` | Test terminology and indexing assumptions within a strict cap. | **CLOSED / CALIBRATION COMPLETE — 28/30 EXECUTIONS** | Calibration log and owner-approved query-family amendments only. |
-| `C_FORMAL_FREEZE` | Approve exact platform-specific queries, filters, and sequence. | **NOT AUTHORIZED** | Versioned formal query set and change-control baseline. |
+| `C_FORMAL_FREEZE` | Approve exact platform-specific queries, filters, and sequence. | **CLOSED / FORMAL SEARCH ARCHITECTURE FROZEN** | Frozen formal plan, environment registry, and query register; no execution. |
 | `D_FORMAL_SEARCH` | Execute authorized Gate 0 searches and screen results. | **CLOSED** | Search log, candidate/source records, evidence/literature entries as separately authorized. |
 
 No stage opens automatically. Owner authorization must be recorded in `docs/DECISION_LOG.md`. Stage A approval will not itself authorize Stage B.
@@ -437,11 +437,11 @@ For each proposed vocabulary or architecture change, record the prior term/famil
 
 ### 13.8 Formal-query freeze after calibration
 
-If separately authorized, Stage C will convert approved families into platform-specific strings and record query syntax, fields, filters, date/geographic limits, order, and expected purpose. Each proposed formal environment must be classified under Section 6. An exact executable query cannot be represented as operationally frozen for a `CONDITIONAL_UNVERIFIED` environment; Stage C may define only a query template or conceptual query family pending legitimate native access and syntax/coverage verification. Owner approval of the versioned formal set is required before formal search. Rejected calibration changes remain visible.
+Stage C converted approved families into platform-specific strings or conditional templates and recorded query syntax, fields, filters, date/geographic limits, execution priority, and expected purpose. Each formal environment is classified under Section 6. An exact executable query cannot be represented as operationally frozen for a `CONDITIONAL_UNVERIFIED` environment; such environments retain only a query template or conceptual query family pending legitimate native access and syntax/coverage verification. Decision D-0021 approved and froze the versioned formal set without authorizing execution. Rejected calibration changes remain visible. The authoritative Stage C implementation is `literature/FORMAL_SEARCH_PLAN.md` with its two CSV registers.
 
 ### 13.9 Owner-approved Stage B closure
 
-Stage B closed as `CALIBRATION SUFFICIENT` after 28 of the maximum 30 query executions. The two remaining executions are intentionally unused; no extension is authorized. The execution record is `literature/SEARCH_LOG.csv`, the six retained pointers remain `CALIBRATION LEAD — NOT YET EVIDENCE`, and the approved interpretations and native-environment limitations are documented in `literature/CALIBRATION_REPORT.md` and Decision D-0019. Stage C and every substantive or formal search function remain unauthorized.
+Stage B closed as `CALIBRATION SUFFICIENT` after 28 of the maximum 30 query executions. The two remaining executions are intentionally unused; no extension is authorized. The execution record is `literature/SEARCH_LOG.csv`, the six retained pointers remain `CALIBRATION LEAD — NOT YET EVIDENCE`, and the approved interpretations and native-environment limitations are documented in `literature/CALIBRATION_REPORT.md` and Decision D-0019. Decision D-0020 opened Stage C design; Decision D-0021 closed and froze it. Every query execution and substantive search function remains unauthorized.
 
 ## 14. Future search-log design
 
@@ -650,4 +650,4 @@ Owner freeze should assign a version and record any required corrections in the 
 
 | Role | Name | Decision | Date | Conditions |
 |---|---|---|---|---|
-| Project owner | Soroush Karahrodi | Approved with required corrections applied | 2026-09-25 | Stage A freeze record. Stage B was opened by D-0018 and closed/approved by D-0019 after 28/30 executions; Stage C, formal search, and evidence acquisition remain closed. |
+| Project owner | Soroush Karahrodi | Approved with required corrections applied | 2026-09-25 | Stage A freeze record. Stage B was opened by D-0018 and closed/approved by D-0019 after 28/30 executions. Stage C was opened by D-0020 and closed/frozen by D-0021; execution and evidence acquisition remain closed. |

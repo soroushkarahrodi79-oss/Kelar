@@ -1,9 +1,9 @@
 # Gate 0 Literature-Landscape Search Protocol
 
-**Status:** Gate 0 Stage A approved/frozen component; Stage B calibration closed/complete; Stage C and formal searching remain unauthorized
+**Status:** Gate 0 Stage A approved/frozen component; Stage B calibration closed/complete; Stage C formal-search architecture closed/frozen; query execution remains unauthorized
 **Purpose:** Test conceptual coherence, evidence availability, and a plausible research contribution—not conduct a full systematic review.
 
-This protocol governs the bounded academic literature landscape. The cross-domain search architecture, including official, technical, case-discovery, and data-feasibility pathways, is defined in `literature/SEARCH_ARCHITECTURE.md`. Where the two documents differ, the owner-frozen cross-domain architecture and any logged amendment control.
+This protocol governs the bounded academic literature landscape. The cross-domain search architecture is defined in `literature/SEARCH_ARCHITECTURE.md`; the Stage C operational design is defined in `literature/FORMAL_SEARCH_PLAN.md` and its two registers. Where the documents differ, the owner-frozen architecture and logged owner-approved amendment control.
 
 ## 1. Review questions
 
@@ -76,7 +76,7 @@ After calibration:
 8. run targeted contradiction and non-transfer searches; and
 9. produce a domain-coverage and gap map without forcing unsupported conceptual bridges.
 
-No part of this procedure is authorized by approval of the Phase 0A baseline alone.
+Stage C froze the design for steps 1–2 without authorizing execution. No query execution, screening, matrix population, citation chaining, or other part of steps 3–9 is authorized.
 
 ## 7. Stopping rule
 

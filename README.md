@@ -4,7 +4,7 @@ This repository is the canonical English-language scientific record for a propos
 
 ## Current authorization
 
-The reviewed **Phase 0A — Project Inception & Gate 0 Design** package is closed and baselined at commit `4ac933fdad99c3cfd495e6c175c1e3d64b37f217`. Gate 0 is open; Stage A is frozen at commit `0ebbafd3aa2bdc5615cc564506ca4f024156af28`; and Stage B calibration is complete and owner-approved. No formal evidence or literature acquisition, formal search, comparative case screening or selection, policy recommendation, fieldwork, GIS analysis, tourism modelling, or public dissemination has begun.
+The reviewed **Phase 0A — Project Inception & Gate 0 Design** package is closed and baselined at commit `4ac933fdad99c3cfd495e6c175c1e3d64b37f217`. Gate 0 is open; Stage A is frozen at commit `0ebbafd3aa2bdc5615cc564506ca4f024156af28`; Stage B is frozen at commit `dfba71a26254d982508dff03d58526415e7d0a35`; and Stage C is closed with the formal-search architecture frozen. No formal search, evidence or literature acquisition, comparative case screening or selection, policy recommendation, fieldwork, GIS analysis, tourism modelling, or public dissemination has begun.
 
 Current status:
 
@@ -13,13 +13,13 @@ Current status:
 - **Stage A:** CLOSED / FROZEN
 - **Current authorized search substage:** NONE
 - **Stage B:** CLOSED / CALIBRATION COMPLETE
-- **Stage C:** NOT AUTHORIZED
+- **Stage C:** CLOSED / FORMAL SEARCH ARCHITECTURE FROZEN
 - **Formal evidence acquisition:** NOT AUTHORIZED
 - **Formal literature acquisition:** NOT AUTHORIZED
 - **Kelardasht claim verification:** NOT AUTHORIZED
 - **Spanish case screening:** NOT AUTHORIZED
 - **Calibration search:** CLOSED — 28 OF 30 EXECUTIONS USED; CALIBRATION SUFFICIENT
-- **Formal search:** NOT YET AUTHORIZED
+- **Formal search execution:** NOT AUTHORIZED
 
 The primary analytical framing is **heritage governance, conservation readiness, community safeguards, and sustainable destination planning**. Tourism and destination development are applied domains, not predetermined objectives. The repository does not assume that tourism growth is desirable, that heritage should be converted into a tourism product, or that Spanish practices are transferable. The project may conclude that tourism development should be delayed, constrained, redirected, or not prioritized; it may also be modified or stopped.
 
@@ -38,6 +38,9 @@ This is an independent research and professional portfolio project academically 
 | `evidence/EVIDENCE_REGISTER.csv` | Empty schema for claim-specific evidence items. |
 | `literature/SEARCH_PROTOCOL.md` | Pre-registers the bounded Gate 0 literature-landscape search. |
 | `literature/SEARCH_ARCHITECTURE.md` | Defines the multilingual cross-domain Stage A architecture governing future Gate 0 search activity. |
+| `literature/FORMAL_SEARCH_PLAN.md` | Defines the Stage C formal-search design, screening pathway, and execution-readiness controls. |
+| `literature/FORMAL_QUERY_REGISTER.csv` | Registers versioned executable queries, conditional templates, and excluded query candidates. |
+| `literature/SEARCH_ENVIRONMENTS.csv` | Classifies candidate search environments by verified access and search behaviour. |
 | `literature/LITERATURE_MATRIX.csv` | Empty schema for literature screening and extraction. |
 | `cases/spain/CASE_SCREENING.csv` | Empty schema for reproducible Spanish candidate-case screening. |
 
@@ -67,4 +70,4 @@ Do not commit restricted source files, personal data, credentials, exact coordin
 
 ## Immediate control
 
-Stage A is frozen and Stage B calibration is closed/complete. Stage C is not authorized. Do not execute further calibration, formal searching, evidence or literature acquisition, substantive register population, claim verification, or Spanish case screening/selection.
+Stages A, B, and C are frozen. Formal search execution is not authorized. Do not execute a query, add an `FS-*` execution row, acquire evidence or literature, populate substantive registers, verify claims, or screen/select Spanish cases.

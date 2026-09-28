@@ -5,15 +5,15 @@
 **Stage A:** CLOSED / FROZEN
 **Current authorized search substage:** NONE
 **Stage B:** CLOSED / CALIBRATION COMPLETE (28/30 EXECUTIONS)
-**Stage C:** NOT AUTHORIZED
+**Stage C:** CLOSED / FORMAL SEARCH ARCHITECTURE FROZEN
 **Formal evidence acquisition:** NOT AUTHORIZED
 **Formal literature acquisition:** NOT AUTHORIZED
 **Kelardasht claim verification:** NOT AUTHORIZED
 **Spanish case screening:** NOT AUTHORIZED
 **Calibration search:** CLOSED; CALIBRATION SUFFICIENT; 2 EXECUTIONS INTENTIONALLY UNUSED
-**Formal search:** NOT YET AUTHORIZED
+**Formal search execution:** NOT AUTHORIZED
 **Canonical language:** English  
-**Last updated:** 2026-09-25
+**Last updated:** 2026-09-28
 
 ## 1. Purpose
 
@@ -389,7 +389,7 @@ Specialist review is desirable but not guaranteed and Gate 0 execution must not 
 
 ## 11. Phase boundary
 
-Stage B is closed after owner approval of the bounded terminology, indexing, transliteration, database-behaviour, and search-environment calibration recorded under `literature/SEARCH_ARCHITECTURE.md`. Stage C, formal searching, evidence/literature acquisition, substantive register population, claim verification, data acquisition, and case screening/selection remain closed unless explicitly authorized.
+Stage B is closed after owner approval of the bounded terminology, indexing, transliteration, database-behaviour, and search-environment calibration recorded under `literature/SEARCH_ARCHITECTURE.md`. Stage C is closed with the formal-search architecture frozen in `literature/FORMAL_SEARCH_PLAN.md`, `literature/SEARCH_ENVIRONMENTS.csv`, and `literature/FORMAL_QUERY_REGISTER.csv`. Query execution, evidence/literature acquisition, substantive register population, claim verification, data acquisition, and case screening/selection remain closed unless explicitly authorized.
 
 ## Approval and freeze record
 
