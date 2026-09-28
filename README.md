@@ -14,6 +14,8 @@ Current status:
 - **Current authorized search substage:** NONE
 - **Stage B:** CLOSED / CALIBRATION COMPLETE
 - **Stage C:** CLOSED / FORMAL SEARCH ARCHITECTURE FROZEN
+- **Stage D1A (bounded P1 retrieval):** HALTED BEFORE EXECUTION — ENVIRONMENT VERIFICATION REQUIRED
+- **ENV-001 Cloud surface verification (D-0022):** COMPLETE — `PARTIAL_VERIFICATION` (`ENV-001-SURFACE-CLOUD-01`; locator-only, exact-phrase and half-space phrase semantics unverified)
 - **Formal evidence acquisition:** NOT AUTHORIZED
 - **Formal literature acquisition:** NOT AUTHORIZED
 - **Kelardasht claim verification:** NOT AUTHORIZED
