@@ -6,6 +6,7 @@
 **Current authorized search substage:** NONE
 **Stage B:** CLOSED / CALIBRATION COMPLETE (28/30 EXECUTIONS)
 **Stage C:** CLOSED / FORMAL SEARCH ARCHITECTURE FROZEN
+**Stage D1A:** HALTED BEFORE EXECUTION — ENVIRONMENT VERIFICATION REQUIRED (see D-0022; ENV-001 Cloud surface = `PARTIAL_VERIFICATION`)
 **Formal evidence acquisition:** NOT AUTHORIZED
 **Formal literature acquisition:** NOT AUTHORIZED
 **Kelardasht claim verification:** NOT AUTHORIZED
