@@ -33,19 +33,17 @@ Strings were copied verbatim from `FORMAL_QUERY_REGISTER.csv`; no word was added
 36 total (9 per query; every query's displayed set was ≤ the 20-record ceiling, so no early-stopping rule was triggered by the ceiling). Logged as `RET-0001`–`RET-0036` in `FORMAL_RETRIEVAL_REGISTER.csv`.
 
 ## 7. Unique retained
-31 unique records (36 inspected − 5 duplicates).
+32 unique locator records (36 inspected − 4 confirmed duplicates).
 
 ## 8. Duplicates
-5 duplicate records:
-- **Exact-URL cross-query repeats (4):** `RET-0012` (=`RET-0003`), `RET-0015` (=`RET-0006`), `RET-0031` (=`RET-0006`), `RET-0035` (=`RET-0008`).
-- **Cross-host content-lineage duplicate (1):** `RET-0006` (akharinkhabar.ir republication of the same story as `RET-0003`, mehrnews.com).
-The `akharinkhabar.ir/local/11016623` item recurred in three of the four searches, and the mehrnews "قطب گردشگری تاریخی" story appeared in two — a clear, detectable duplicate lineage.
+4 confirmed duplicates, **all exact-URL repeats**: `RET-0012` (=`RET-0003`), `RET-0015` (=`RET-0006`), `RET-0031` (=`RET-0006`), `RET-0035` (=`RET-0008`).
+Only exact-URL identity is treated as a confirmed duplicate. `RET-0006` (akharinkhabar.ir) returned the same/near-identical headline as `RET-0003` (mehrnews.com), but this is **not** asserted as a cross-host duplicate: the lineage cannot be verified without dereferencing, so `RET-0006` is recorded as `DISCOVERY_ONLY` with a `POSSIBLE_CROSS_HOST_DUPLICATE — LINEAGE NOT VERIFIED` note. The `akharinkhabar.ir/local/11016623` URL did recur by exact match across three of the four searches (`RET-0006`/`RET-0015`/`RET-0031`), which is what supports the two confirmed exact-URL duplicates among them.
 
 ## 9. POTENTIALLY_ELIGIBLE
 13 records: `RET-0002`, `RET-0003`, `RET-0004`, `RET-0010`, `RET-0013`, `RET-0016`, `RET-0019`, `RET-0021`, `RET-0022`, `RET-0028`, `RET-0032`, `RET-0033`, `RET-0036`. All routed for future review only; none accepted as evidence.
 
 ## 10. DISCOVERY_ONLY
-11 records: `RET-0005`, `RET-0008`, `RET-0011`, `RET-0014`, `RET-0017`, `RET-0020`, `RET-0025`, `RET-0027`, `RET-0029`, `RET-0030`, `RET-0034`.
+12 records: `RET-0005`, `RET-0006`, `RET-0008`, `RET-0011`, `RET-0014`, `RET-0017`, `RET-0020`, `RET-0025`, `RET-0027`, `RET-0029`, `RET-0030`, `RET-0034`.
 
 ## 11. EXCLUDED_AT_METADATA
 7 records: `RET-0001`, `RET-0007`, `RET-0009` (non-Kelardasht museum/encyclopedia references), `RET-0018` (Kalat, not Kelardasht), `RET-0023` (Golestan), `RET-0024` (Fars), `RET-0026` (Razavi Khorasan). All excluded on geographic-scope mismatch observable from the returned title.
@@ -62,19 +60,22 @@ The `akharinkhabar.ir/local/11016623` item recurred in three of the four searche
 
 ## 15. Operational limitations
 1. Surface is AI-mediated, provider/version opaque, and US-region-only; the AI summary layer was ignored, and ranking/snippets/counts are non-evidentiary (per D-0022).
-2. Under the applied fidelity safeguard, only directly observed fields (title, URL, host, language) were recorded. Author, publication date, abstract, and temporal scope are `NOT_CAPTURED`; source tier is `TIER_UNRESOLVED` unless domain identity is unambiguous. No landing page was read.
+2. Under the applied fidelity safeguard, only directly observed locator fields (retrieval/search/query IDs, surface profile, domain, language, result position, returned title, URL, host) were recorded. Author, publication date, source type, and temporal scope are `NOT_CAPTURED`; access status is `NOT_VERIFIED`; source tier is `TIER_UNRESOLVED` for **every** row (source authority is not inferred from domain alone). Geographic scope is set only where the returned title itself states a locality; otherwise `UNRESOLVED`. No landing page was read.
 3. Each query returned exactly 9 displayed links — a shallow surface depth well below the 20-record ceiling; this constrains recall for discovery.
 4. One returned title carried a corrupted Unicode glyph (`RET-0019`, in `لایحه`), indicating occasional encoding noise in returned metadata.
 5. Single execution per query cannot separate ranking instability from genuine input-sensitivity; counts are not a coverage measure and absence was not inferred from early stopping.
 
 ## 16. Was metadata screening workable?
-**Yes, at the locator level.** Titles + URLs + hosts were sufficient to (a) route on geographic scope (7 clean metadata exclusions, incl. a Kalat/Kelardasht token confusion), (b) separate official-institution and statistical-data candidates from press and promotional material, and (c) apply non-acceptance screening states consistently. It was **not** sufficient for author/date/abstract/tier resolution without substantive reading, which the pilot deliberately did not perform.
+**Yes, at the locator level.** Returned titles + URLs + hosts were sufficient to (a) route on geographic scope where the title itself states a locality (7 clean metadata exclusions, incl. a Kalat/Kelardasht token confusion), (b) separate candidate official/statistical-looking pages (by returned title and host string) from press and self-published material **without asserting their authority**, and (c) apply non-acceptance screening states consistently. It was **not** sufficient for author/date/source-type/tier resolution without substantive reading, which the pilot deliberately did not perform.
 
 ## 17. Was source provenance recoverable?
-**Yes.** Every record carried a concrete, dereferenceable URL and an identifiable host domain (e.g., mehrnews.com, mcth.ir, richt.ir, civilica.com, en.wikipedia.org). Official institutional ownership was observable from the domain for ministry and provincial-authority pages. Underlying-publication lineage (the ministry statistical yearbook surfacing via official domain and via third-party hosts) was traceable at the metadata level.
+Two distinct notions must be separated:
+
+- **LOCATOR PROVENANCE — recoverable:** every record carried a concrete, dereferenceable URL and an identifiable host string (e.g., mehrnews.com, mcth.ir, richt.ir, civilica.com, en.wikipedia.org). Title, URL, and host are directly observed and recoverable.
+- **SOURCE AUTHENTICATION / BIBLIOGRAPHIC PROVENANCE — NOT YET VERIFIED:** institutional ownership, source authority, author, date, and underlying-publication lineage are **not** established by a host string and were not confirmed (no dereferencing, no substantive reading). Apparent lineages — e.g., a statistical yearbook surfacing via an official-looking domain and via third-party hosts — are recorded as unverified pointers, not authenticated provenance.
 
 ## 18. Is the Cloud surface useful enough to retain for compatible retrieval?
-**Yes, but strictly as a locator layer** for token-based bounded discovery of Kelardasht-relevant official pages, difficult-to-index Persian materials, and data/publication landing pages. Its outputs are AI-surfaced pointers, not bibliographic records, and every retained row requires independent re-verification before any evidentiary use. It is not a reproducible bibliographic database, a prevalence/count measure, or a basis for inferring absence.
+**Yes, but strictly as a locator layer** for token-based bounded discovery of Kelardasht-relevant candidate pages, difficult-to-index Persian materials, and apparent data/publication landing pages. Its outputs are AI-surfaced pointers, not bibliographic records, and every retained row requires independent source authentication and re-verification before any evidentiary use. It is not a reproducible bibliographic database, a prevalence/count measure, or a basis for inferring absence.
 
 ## 19. Does full D1A still require a browser surface for the blocked queries?
 **Yes.** The eight `BLOCKED_FOR_SURFACE_FIDELITY` P1 queries depend on exact-phrase quoting and/or material half-space (ZWNJ) phrase precision, which D-0022 showed this surface does not honor. Completing D1A across the full P1 set requires either a verified browser surface for those queries or a query-design change authorized separately. This pilot completes only the four compatible queries and does not complete D1A.
